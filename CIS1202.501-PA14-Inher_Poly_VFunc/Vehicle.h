@@ -16,7 +16,7 @@ using namespace std;
 class Vehicle
 {
 private:
-	string manuf;
+	string man;
 	int year;
 public:
 	Vehicle();
