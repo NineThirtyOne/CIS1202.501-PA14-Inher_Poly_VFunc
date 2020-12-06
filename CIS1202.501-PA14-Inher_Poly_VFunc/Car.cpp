@@ -1,8 +1,9 @@
+#include <string>
 #include "Car.h"
 
-Car::Car()
+Car::Car(int nDoors, string newMan, int newYear) : Vehicle(newMan, newYear)
 {
-	numDoors = 2;
+	numDoors = nDoors;
 }
 
 void Car::setNumDoors(int num)

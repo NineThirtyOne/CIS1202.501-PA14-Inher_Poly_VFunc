@@ -26,15 +26,13 @@ int main()
             c.	Get input from the user for manufacturer, year built, and towing capacity, then store this information in a Truck object.  Call the displayInfo method and display it on the output.
     */
 
-    Vehicle v; Car c; Truck t;
-
     cout << "Vehicle Program" << endl << endl;
 
     //  Vehicle
     cout << "Vehicle:" << endl;
+
     //  Get User Input
-    v.setMan(getStrInput("Enter Manufacturer : "));
-    v.setYear(getIntInput("Enter Year Built : "));
+    Vehicle v(getStrInput("Enter Manufacturer : "), getIntInput("Enter Year Built : "));
     cout << endl;
 
     //  Vehicle Output
@@ -45,9 +43,7 @@ int main()
     //  Car
     cout << "Car:" << endl;
     //  Get User Input
-    c.setMan(getStrInput("Enter Manufacturer : "));
-    c.setYear(getIntInput("Enter Year Built : "));
-    c.setNumDoors(getIntInput("Enter the Number of Doors: "));
+    Car c(getIntInput("Enter the Number of Doors: "), getStrInput("Enter Manufacturer : "), getIntInput("Enter Year Built : "));
     cout << endl;
    
     //  Car Output
@@ -58,9 +54,7 @@ int main()
     //  Truck
     cout << "Truck:" << endl;
     //  Get User Input
-    t.setMan(getStrInput("Enter Manufacturer : "));
-    t.setYear(getIntInput("Enter Year Built : "));
-    t.setTowCap(getIntInput("Enter Towing Capacity: "));
+    Truck t(getIntInput("Enter Towing Capacity: "), getStrInput("Enter Manufacturer : "), getIntInput("Enter Year Built : "));
     cout << endl;
     
     //  Truck Output

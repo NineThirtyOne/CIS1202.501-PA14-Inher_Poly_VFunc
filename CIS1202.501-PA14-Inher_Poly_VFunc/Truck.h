@@ -15,7 +15,7 @@ class Truck : public Vehicle
 private:
 	int towCap;
 public:
-	Truck();
+	Truck(int, string, int);
 
 	void setTowCap(int);
 	double getTowCap();

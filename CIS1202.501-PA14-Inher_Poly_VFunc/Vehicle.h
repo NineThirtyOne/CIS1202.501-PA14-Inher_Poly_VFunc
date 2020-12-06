@@ -19,7 +19,7 @@ private:
 	string man;
 	int year;
 public:
-	Vehicle();
+	Vehicle(string, int);
 
 	void setMan(string);
 	void setYear(int);

@@ -1,8 +1,8 @@
 #include "Truck.h"
 
-Truck::Truck()
+Truck::Truck(int tCap, string newMan, int newYear) : Vehicle(newMan, newYear)
 {
-	towCap = 0;
+	towCap = tCap;
 }
 
 void Truck::setTowCap(int tC)

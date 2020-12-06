@@ -1,9 +1,9 @@
 #include "Vehicle.h"
 
-Vehicle::Vehicle()
+Vehicle::Vehicle(string newMan, int newYear)
 {
-	man = "";
-	year = 0;
+	man = newMan;
+	year = newYear;
 }
 
 void Vehicle::setMan(string m)

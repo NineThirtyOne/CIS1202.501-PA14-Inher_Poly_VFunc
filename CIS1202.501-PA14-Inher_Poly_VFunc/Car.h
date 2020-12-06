@@ -8,7 +8,7 @@
 		b.	Define a constructor and appropriate getters and setters
 		c.	Define a displayInfo method to display the contents of the object (call the base class method to display the Vehicle info, then display the Car info)
 */
-
+#include <string>
 #include "Vehicle.h"
 
 class Car : public Vehicle
@@ -16,7 +16,7 @@ class Car : public Vehicle
 private:
 	int numDoors;
 public:
-	Car();
+	Car(int, string, int);
 
 	void setNumDoors(int);
 	int getNumDoors();
